@@ -10,11 +10,13 @@ class Electric
 {
   use Request;
 
+  public static function purchase($params)
+  {
+    return self::post("pay", $params)->json();
+  }
+
   public static function verify($params)
   {
-    return self::post("merchant-verify", self::merge(
-      $params,
-      []
-    ))->json();
+    return self::post("merchant-verify", $params)->json();
   }
 }
