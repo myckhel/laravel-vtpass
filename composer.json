@@ -33,10 +33,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Myckhel\\Vtpass\\LaravelVtpassServiceProvider"
+                "Myckhel\\Vtpass\\VtpassServiceProvider"
             ],
             "aliases": {
-                "Vtpass": "Myckhel\\Vtpass\\Facades\\LaravelVtpass"
+                "Vtpass": "Myckhel\\Vtpass\\Facades\\Vtpass"
             }
         }
     }

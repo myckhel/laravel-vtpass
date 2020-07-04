@@ -4,7 +4,7 @@ namespace Myckhel\Vtpass;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelVtpassServiceProvider extends ServiceProvider
+class VtpassServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -35,7 +35,7 @@ class LaravelVtpassServiceProvider extends ServiceProvider
 
         // Register the service the package provides.
         $this->app->singleton('vtpass', function ($app) {
-            return new LaravelVtpass;
+            return new Vtpass;
         });
     }
 

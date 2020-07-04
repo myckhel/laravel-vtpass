@@ -4,7 +4,7 @@ namespace Myckhel\Vtpass\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class LaravelVtpass extends Facade
+class Vtpass extends Facade
 {
     /**
      * Get the registered name of the component.
