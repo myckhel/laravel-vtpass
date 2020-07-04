@@ -1,13 +1,20 @@
 <?php
 namespace Myckhel\Vtpass\Support;
 
+use Myckhel\Vtpass\Request;
+
 /**
  *
  */
-class Elctric
+class Electric
 {
-  public function verify($value='')
+  use Request;
+
+  public static function verify($params)
   {
-    // code...
+    return self::post("merchant-verify", self::merge(
+      $params,
+      []
+    ))->json();
   }
 }
