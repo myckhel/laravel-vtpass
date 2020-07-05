@@ -12,7 +12,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require myckhel/laravelvtpass
+$ composer require myckhel/laravel-vtpass
 ```
 
 ## Usage
