@@ -44,14 +44,14 @@ If you discover any security related issues, please email author email instead o
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/myckhel/laravelvtpass.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/myckhel/laravelvtpass.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/myckhel/laravelvtpass/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/myckhel/laravel-vtpass.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/myckhel/laravel-vtpass.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/myckhel/laravel-vtpass/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/myckhel/laravelvtpass
-[link-downloads]: https://packagist.org/packages/myckhel/laravelvtpass
-[link-travis]: https://travis-ci.org/myckhel/laravelvtpass
+[link-packagist]: https://packagist.org/packages/myckhel/laravel-vtpass
+[link-downloads]: https://packagist.org/packages/myckhel/laravel-vtpass
+[link-travis]: https://travis-ci.org/myckhel/laravel-vtpass
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/myckhel
 [link-contributors]: ../../contributors
