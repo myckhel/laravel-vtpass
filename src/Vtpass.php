@@ -1,21 +1,13 @@
 <?php
 namespace Myckhel\Vtpass;
 
+use Myckhel\Vtpass\Request;
+use Myckhel\Vtpass\Traits\HasQuery;
+
 /**
  *
  */
 class VtPass
 {
-
-  public function __construct()
-  {
-    $this->username    = config('vtpass.username');
-    $this->password    = config('vtpass.password');
-
-    $this->live_url    = "https://vtpass.com/api/";
-    $this->sandbox_url = "https://sandbox.vtpass.com/api/";
-
-    $this->url         = true ? $this->sandbox_url : $this->live_url;
-  }
-
+  use Request, HasQuery;
 }

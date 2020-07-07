@@ -2,7 +2,7 @@
 namespace Myckhel\VtPass;
 
 use Illuminate\Support\Facades\Http;
-use Myckhel\Vtpass\Vtpass;
+use Myckhel\Vtpass\VtpassConfig;
 
 /**
  *
@@ -10,7 +10,7 @@ use Myckhel\Vtpass\Vtpass;
 trait Request
 {
   public static function vt(){
-    return new Vtpass;
+    return new VtpassConfig;
   }
 
   public static function post($endpoint, $params)
