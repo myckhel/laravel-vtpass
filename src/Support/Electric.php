@@ -2,26 +2,13 @@
 namespace Myckhel\Vtpass\Support;
 
 use Myckhel\Vtpass\Request;
+use Myckhel\Vtpass\Traits\HasQuery;
 
 /**
  *
  */
 class Electric
 {
-  use Request;
+  use Request, HasQuery;
 
-  public static function status($params)
-  {
-    return self::post("requery", $params)->json();
-  }
-
-  public static function purchase($params)
-  {
-    return self::post("pay", $params)->json();
-  }
-
-  public static function verify($params)
-  {
-    return self::post("merchant-verify", $params)->json();
-  }
 }
