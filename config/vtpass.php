@@ -3,5 +3,5 @@
 return [
   "username"          => env("VTPASS_USERNAME"),
   "password"          => env("VTPASS_PASSWORD"),
-  "mode"              => 'sandbox', // app mode sandbox ?? live
+  "mode"              => env("VTPASS_MODE", "sandbox"), // app mode sandbox ?? live
 ];
