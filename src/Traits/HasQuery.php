@@ -26,6 +26,6 @@ trait HasQuery
 
   public function variations($params)
   {
-    return self::post("service-variations", $params)->json();
+    return self::get("service-variations", $params)->json();
   }
 }
