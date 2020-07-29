@@ -20,7 +20,7 @@ The package will automatically register a service provider.
 
 You need to publish the configuration file:
 
-```php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider"```
+```php artisan vendor:publish --provider="Myckhel\Vtpass\VtpassServiceProvider"```
 
 This is the default content of the config file ```vtpass.php```:
 
