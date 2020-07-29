@@ -29,12 +29,15 @@ This is the default content of the config file ```vtpass.php```:
 return [
   "username"          => env("VTPASS_USERNAME"),
   "password"          => env("VTPASS_PASSWORD"),
+  // specify to use sandbox mode or live mode
+   "mode"              => env("VTPASS_MODE", "sandbox"), // app mode sandbox ?? live
 ];
 ```
 Update Your Projects `.env` with:
 ```
 VTPASS_USERNAME=user@email.extension
 VTPASS_PASSWORD=XXXXXXXXXXXXXXXXXXXX
+VTPASS_PASSWORD=sandbox
 ```
 
 ## Basic Usage
