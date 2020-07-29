@@ -7,7 +7,7 @@ use Myckhel\Vtpass\Traits\HasQuery;
 /**
  *
  */
-class VtPass
+class Vtpass
 {
   use Request, HasQuery;
 }
