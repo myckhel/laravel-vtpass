@@ -37,7 +37,7 @@ Update Your Projects `.env` with:
 ```
 VTPASS_USERNAME=user@email.extension
 VTPASS_PASSWORD=XXXXXXXXXXXXXXXXXXXX
-VTPASS_PASSWORD=sandbox
+VTPASS_MODE=sandbox
 ```
 
 ## Basic Usage
