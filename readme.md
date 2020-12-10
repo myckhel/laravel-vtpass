@@ -3,7 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
 
 This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
 
@@ -11,7 +10,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 
 Via Composer
 
-``` bash
+```bash
 $ composer require myckhel/laravel-vtpass
 ```
 
@@ -20,11 +19,14 @@ The package will automatically register a service provider.
 
 You need to publish the configuration file:
 
-```php artisan vendor:publish --provider="Myckhel\Vtpass\VtpassServiceProvider"```
+```bash
+php artisan vendor:publish --provider="Myckhel\Vtpass\VtpassServiceProvider"
+```
 
 This is the default content of the config file ```vtpass.php```:
 
-```<?php
+```php
+<?php
 
 return [
   "username"          => env("VTPASS_USERNAME"),
@@ -34,14 +36,14 @@ return [
 ];
 ```
 Update Your Projects `.env` with:
-```
+```bash
 VTPASS_USERNAME=user@email.extension
 VTPASS_PASSWORD=XXXXXXXXXXXXXXXXXXXX
 VTPASS_MODE=sandbox
 ```
 
 ## Basic Usage
-```
+```php
 use Vtpass;
 
 Vtpass::verify($parameters);
@@ -51,7 +53,7 @@ Vtpass::variations($parameters);
 ```
 
 ## Available Api's Model
-```
+```php
 Myckhel\Vtpass\Support\MobileAirtime;
 Myckhel\Vtpass\Support\MobileData;
 Myckhel\Vtpass\Support\Electric;
@@ -63,7 +65,7 @@ Myckhel\Vtpass\Support\Education;
 
 ### Airtime
 
-```
+```php
 use Myckhel\Vtpass\Support\MobileAirtime;
 
 public function buyAirtime(){ 
@@ -79,7 +81,7 @@ public function buyAirtime(){
 }
 ```
 #### Response
-```
+```json
 {  
    "code":"000",
    "response_description":"TRANSACTION SUCCESSFUL",
@@ -95,13 +97,13 @@ public function buyAirtime(){
 }
 ```
 #### Status
-```
+```php
 MobileAirtime::status([
   'request_id' => '24545544'
 ]);
 ```
 #### Verify Electricity
-```
+```php
 use Myckhel\Vtpass\Support\Electric;
 
 $serviceID = 'ikeja-electric'
